@@ -10,10 +10,10 @@ const Specials = () => {
   // STEP 2 - add the imported data to state
   const [specialsState] = useState(specials);
   const stylesSpecial = {
-    border: '2px solid green',
+    // border: '2px solid green',
     display: 'flex',
     justifyContent: 'space-between',
-    margin: '25px',
+    margin: '25px 10px 0 25px',
     width: '300px',
     height: '80px',
     fontSize: '100px',

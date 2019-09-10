@@ -18,18 +18,36 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
   const styles ={
-    border: '2px solid blue',
-    padding: '25px 0 25px 25px'
+    padding: '25px 0 25px 25px',
+  }
+
+  const stylesAll ={
+    display: 'flex',
+  }
+
+  const stylesOperators ={
+    // border: '2px solid blue',
+    width: '150px',
+    
   }
   
+  const stylesBase ={
+    // border: '2px solid blue',
+    marginLeft: '10px'
+  }
+
   return (
     <div className="container" style={styles}>
       <Logo />
       <Display />
-      <div className="App">
-        <Specials />
-        <Operators />
-        <Numbers />
+      <div className="App" style={stylesAll}>
+        <div className='Left' style={stylesBase}>
+          <Specials />
+          <Numbers />
+        </div>
+        <div className='Right' style={stylesOperators}>
+          <Operators />
+        </div>
       </div>
     </div>
   );

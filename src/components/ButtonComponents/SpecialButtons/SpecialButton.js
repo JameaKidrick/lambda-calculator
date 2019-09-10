@@ -2,7 +2,7 @@ import React from "react";
 
 const SpecialButton = props => {
   const stylesSpecial= {
-    border: '2px solid yellow',
+    // border: '2px solid yellow',
     background: 'rgb(34, 93, 158)',
     borderRadius: '55%',
     width: '30%',

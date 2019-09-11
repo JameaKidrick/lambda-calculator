@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 import SpecialButton from '../SpecialButtons/SpecialButton'
-
-//import any components needed
-
-//Import your array data to from the provided data file
 import { specials } from '../../../data'
 
+//import any components needed
+// example of import from data.js. Note all the ../   This is how we move through folders. 
+
+//Import your array data to from the provided data file
+
+// STEP 2 - add the imported data to state
+
+/* STEP 3 - Use .map() to iterate over your array data and return a button
+  component matching the name on the provided file. Pass
+  it any props needed by the child component*/
+
+
 const Specials = () => {
-  // STEP 2 - add the imported data to state
   const [specialsState] = useState(specials);
+
+  // STYLING
   const stylesSpecial = {
     // border: '2px solid green',
     display: 'flex',
@@ -23,10 +32,7 @@ const Specials = () => {
 
   return (
     <div style={stylesSpecial}>
-      {/* STEP 3 - Use .map() to iterate over your array data and return a button
-      component matching the name on the provided file. Pass
-      it any props needed by the child component*/
-      specialsState.map((specials, index) => (
+      {specialsState.map((specials, index) => (
         <SpecialButton key={index} specials={specials}/>
       ))}
     </div>

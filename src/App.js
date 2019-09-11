@@ -26,13 +26,13 @@ function App() {
   }
 
   const stylesOperators ={
-    // border: '2px solid blue',
+    border: '2px solid blue',
     width: '150px',
     
   }
   
   const stylesBase ={
-    // border: '2px solid blue',
+    border: '2px solid blue',
     marginLeft: '10px'
   }
 

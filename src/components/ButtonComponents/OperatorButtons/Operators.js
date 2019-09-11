@@ -19,7 +19,7 @@ const Operators = () => {
 
   // STYLING
   const styles = {
-    // border: '2px solid green',
+    border: '2px solid green',
     display: 'flex',
     flexDirection: 'column',
     alignContent: 'flex-end',

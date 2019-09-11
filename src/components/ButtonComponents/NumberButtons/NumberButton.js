@@ -16,10 +16,21 @@ const NumberButton = props => {
     outline: 'none'
   };
 
+  const stylesZero ={
+    background: 'rgb(24, 67, 121)',
+    borderRadius: '15px',
+    width: '65%',
+    height: '23%',
+    color: 'white',
+    fontSize: '35%',
+    outline: 'none'
+
+  }
+
   return (
     <>
       {
-      <button className="numberBtn" style={stylesNum}>
+      <button className="numberBtn" style={props.numbers === '0' ? stylesZero:stylesNum}>
         {props.numbers}
       </button>
       }

@@ -19,11 +19,12 @@ const Numbers = () => {
 
   // STYLING
   const stylesNumbers = {
-    // border: '2px solid green',
+    border: '2px solid green',
     color: 'white',
     fontSize: '100px',
     display: 'flex',
     justifyContent: 'space-between',
+    alignContent: 'space-between',
     flexWrap: 'wrap',
     width: '300px',
     height: '350px',

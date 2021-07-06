@@ -1,9 +1,41 @@
 import React from "react";
 
-const NumberButton = () => {
+/* Display a button element rendering the data being passed down from the parent container on props */
+
+const NumberButton = props => {
+
+  // STYLING
+  const stylesNum = {
+    // border: '2px solid yellow',
+    background: 'rgb(24, 67, 121)',
+    borderRadius: '55%',
+    width: '30%',
+    height: '23%',
+    color: 'white',
+    fontSize: '35%',
+    outline: 'none'
+  };
+
+  const stylesZero ={
+    background: 'rgb(24, 67, 121)',
+    borderRadius: '15px',
+    width: '65%',
+    height: '23%',
+    color: 'white',
+    fontSize: '35%',
+    outline: 'none'
+
+  }
+
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
+      {
+      <button className="numberBtn" style={props.numbers === '0' ? stylesZero:stylesNum}>
+        {props.numbers}
+      </button>
+      }
     </>
   );
 };
+
+export default NumberButton;
